@@ -52,7 +52,7 @@ ignore_missing_imports = true
 no_implicit_optional = true
 
 [tool.coverage.run]
-omit = ["tests/*", "**/__main__.py", "**/.venv/*", "**/site-packages/*"]
+omit = ["tests/*", "**/__main__.py", "**/.venv/*", "**/site-packages/*", "examples/*"]
 branch = true
 
 [tool.coverage.report]
