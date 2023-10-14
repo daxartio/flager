@@ -55,7 +55,7 @@ format:  ## Formatting code
 
 .PHONY: bump
 bump:  ## Bump version (commit and tag)
-	$(POETRY_RUN) cz bump
+	$(POETRY_RUN) cz bump --major-version-zero
 
 .PHONY: clean
 clean:  ## Clean
