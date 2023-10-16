@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.1"
+version = "0.1.2"
 tag_format = "$version"
 version_files = [
     "flager/__init__.py",
@@ -15,7 +15,7 @@ update_changelog_on_bump = true
 
 [tool.poetry]
 name = "flager"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Danil Akhtarov <daxartio@gmail.com>"]
 license = "MIT"
