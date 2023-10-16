@@ -1,5 +1,5 @@
 import logging
-from typing import Any, Dict, List, Optional, Protocol, Set, Union
+from typing import Any, Dict, Iterable, List, Optional, Protocol, Set, Union
 
 import anyio
 
@@ -18,7 +18,15 @@ class Flag(Protocol):
     enabled: Optional[bool]
 
 
-FeatureFlags = Dict[str, bool]
+class FeatureFlags(Protocol):  # pragma:no cover
+    def keys(self) -> Iterable[str]:
+        ...
+
+    def __setitem__(self, key: str, item: bool) -> None:
+        ...
+
+    def __getitem__(self, key: str) -> bool:
+        ...
 
 
 class Client(Protocol):
